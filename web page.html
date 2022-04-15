@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>One Page Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="home">
+        <header>
+            <a href="#"><img src="" alt=""></a>
+            <ul id="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="https://www.linkedin.com/in/varsha-jha-2a7a63196/">About Us</a></li>
+                <li><a href="https://www.amazon.com">Product</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+         
+    </section>
+    <section id="about"><h1>This Is About</h1></section>
+    <section id="product"><h1>This Is Product</h1></section>
+    <section id="pricing"><h1>This Is Pricing</h1></section>
+    <section id="contact"><h1>This Is Contact</h1></section>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+       
+       <form id="login" class="input-group">
+           <input type="text" class="input-field"placeholder="User Id"required>
+           <input type="text" class="input-field"placeholder="Enter Password"required>
+           <input type="checkbox" class="check-box"><span>Remember Password</span>
+           <button type="submit" class="submit-btn">Log In</button>
+       </form>
+       <form id="register" class="input-group">
+        <input type="text" class="input-field"placeholder="User Id"required>
+        <input type="email" class="input-field"placeholder="Email Id"required>
+        <input type="text" class="input-field"placeholder="Enter Password"required>
+        <input type="checkbox" class="check-box"><span>I agree to the terms</span>
+        <button type="submit" class="submit-btn">Log In</button>
+    </form>
+    </div>
+</div>
+<script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+
+    function register()
+    {
+        x.style.left="-400px";
+        y.style.left="50px";
+        z.style.left="110px";
+    }
+    function login()
+    {
+        x.style.left="50px";
+        y.style.left="450px";
+        z.style.left="0";
+    }
+</script>
+</body>
+</html>
