@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Date</title>
+    </head>
+    <body>
+        <h2>operation using date</h2>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="d1"></p>
+        <p id="d2"></p>
+        <p id="d3"></p>
+        <p id="d4"></p>
+        <p id="d5"></p>
+
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d.getTime();
+
+const a = new Date();
+document.getElementById("demo1").innerHTML = a.getFullYear();
+
+const b = new Date();
+document.getElementById("demo2").innerHTML = b.getMonth() + 1;
+
+const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+const c = new Date();
+let month = months[c.getMonth()];
+document.getElementById("demo3").innerHTML = month;
+
+const e = new Date();
+document.getElementById("demo4").innerHTML = e.getDate();
+
+const f = new Date(2022, 04, 12, 10, 13);
+const dd = new Date("April 13, 2022 12:14:00");
+let msec = Date.parse("March 15, 2022");
+
+document.getElementById("d1").innerHTML=f;
+document.getElementById("d2").innerHTML=f.toUTCString();
+document.getElementById("d3").innerHTML=f.toDateString();
+document.getElementById("d4").innerHTML=f.toISOString();
+document.getElementById("d5").innerHTML=msec;
+
+</script>
+    </body>
+</html>
