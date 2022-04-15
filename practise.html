@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <img id="myimage" onclick="changeimage()" src="off.jpg" width="250" height="350">
+        <script>
+            function changeimage()
+            {
+                var image=document.getElementById('myimage');
+                if(image.src.match("off.jpg"))
+                {
+                    image.src="on.jpg";
+                }
+                else
+                {
+                    image.src="off.jpg";
+                }
+            }
+        </script>
+    </body>
+</html>
